@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Create a Product</h1>
+    <h1 class="" style="font-size: 2.5rem; color: #333; text-align: center;">Create a Product</h1>
     <div>
         @if ($errors->any())
         <ul>
@@ -15,9 +15,6 @@
             <li>{{$error}}</li>
                 
             @endforeach
-
-
-
         </ul>
             
         @endif
@@ -42,8 +39,83 @@
             <input type="text" name="description" id="Description">
         </div>
         <div>
-            <input type="submit" value="Save a New Product">
+            <input type="submit" value="Save new product">
         </div>
     </form>
 </body>
 </html>
+
+<style>
+    /* General form styling */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Form fields */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Submit button */
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    form label {
+        font-size: 14px;
+    }
+
+    form input[type="text"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+</style>

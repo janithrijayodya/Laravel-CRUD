@@ -162,4 +162,56 @@ section{
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
+
+/* =============BUTTON ============ */
+
+   /* General button styling */
+   .btn, input[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Edit button */
+        .btn a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .btn {
+            background-color: #007bff;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Delete button */
+        input[type="submit"] {
+            background-color: #dc3545;
+        }
+        input[type="submit"]:hover {
+            background-color: #c82333;
+            transform: scale(1.05);
+        }
+
+        /* Ensure consistent appearance inside table cells */
+        td {
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .btn, input[type="submit"] {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+        }
 </style>
