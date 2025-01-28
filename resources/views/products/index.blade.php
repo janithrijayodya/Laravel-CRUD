@@ -16,9 +16,7 @@
         @endif
     </div>
     <div>
-        <div>
-            <a href="{{route('products.create')}}">Create a Product</a>
-        </div>
+   
         
 
 <section>
@@ -116,8 +114,8 @@ td{
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 body{
-  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-  background: linear-gradient(to right, #25c481, #25b7c4);
+  background: -webkit-linear-gradient(left, #cdb4db, #8338ec);
+  background: linear-gradient(to right, #cdb4db, #8338ec);
   font-family: 'Roboto', sans-serif;
 }
 section{

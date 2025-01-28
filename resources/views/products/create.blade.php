@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="" style="font-size: 2.5rem; color: #333; text-align: center;">Create a Product</h1>
+    <h1 class="" style="font-size: 2.5rem; color: #8338ec; text-align: center;">Create a Product</h1>
     <div>
         @if ($errors->any())
         <ul>
@@ -46,6 +46,10 @@
 </html>
 
 <style>
+
+    body{
+        background-color: #cdb4db;
+    }
     /* General form styling */
 form {
     max-width: 500px;
@@ -85,7 +89,7 @@ form input[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #28a745;
+    background-color: #8338ec;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
