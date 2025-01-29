@@ -26,6 +26,7 @@ class ProductController extends Controller
             'description' => 'required',
         ]);
 
+        //create() method automatically saves a new record in the table 
         $newProduct = products::create($data);
         return redirect()->route('products.index');
     }

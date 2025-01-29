@@ -48,7 +48,8 @@
 <style>
 
     body{
-        background-color: #cdb4db;
+        background: -webkit-linear-gradient(left, #cdb4db, #8338ec);
+        background: linear-gradient(to right, #cdb4db, #8338ec);
     }
     /* General form styling */
 form {

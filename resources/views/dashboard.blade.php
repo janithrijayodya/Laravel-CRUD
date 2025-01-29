@@ -3,8 +3,8 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="flex items-center" style="height: 600px;">
                 <div class="flex-1 pr-6">
-                    <h1 class="text-4xl font-bold text-gray-800">Welcome to <span class="text-[#8338ec]">Kiddo's Haven</span></h1>
-                    <p class="mt-4 text-lg text-gray-600">
+                <h1 class="text-4xl font-bold text-gray-800" id="welcome">Welcome to <span class="text-[#8338ec]">Kiddo's Haven</span></h1>
+                <p class="mt-4 text-lg text-gray-600">
                     "Where Playtime Meets Endless Wonder and Joy!"
                     </p>
 
@@ -19,7 +19,8 @@
 
 <style>
     #backgrund {
-        background-color: #cdb4db; 
+        background: -webkit-linear-gradient(left, #cdb4db, #8338ec);
+        background: linear-gradient(to right, #cdb4db, #8338ec);
     }
 
     #image {
